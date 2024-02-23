@@ -1,0 +1,12 @@
+.box {
+  background-color: orange ;
+  width: 150px;
+  height: 150px;
+  position: relative;
+}
+h3{
+  position: absolute; 
+  top : 50% ; 
+  left :50% ;
+  transform: translate(-50%, -50%); 
+}
