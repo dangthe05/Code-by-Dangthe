@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>index</title>
+</head>
+<body>
+   <img src="../images/logo.png" alt="" class="logo" align = "left"><br>
+   <h2>THÔNG TIN TUYỂN SINH</h2>
+    <img src="../images/dhkh.png" alt="" class = "dhkh"> 
+    <h3>Danh sách ngành đào tạo</h3>
+    <table border="1">
+            <tr>
+                <td rowspan ="2"> Công nghệ thông tin </td>    
+                <td><a href="./gioi-thieu-cntt.html">Giới thiệu</a></td>
+        </tr>
+        <tr>
+                <td><a href="../pages/ctdt-cntt.html">Chương trình đào tạo</a></td>
+        </tr>
+        <tr>
+            <td rowspan="2"> Kiến trúc</td>
+            <td>GIới thiệu</td>
+        </tr>
+        <tr>
+            <td>
+                Chương trình đào tạo
+            </td>
+        </tr>
+        <tr>
+            <td rowspan="2">Báo chí</td>
+            <td> Giới thiệu</td>
+        </tr>
+        <tr>
+            <td>
+                Chương trình đào tạo
+            </td>
+        </tr>
+    </table>
+    <a href="../pages/tu-van.html"><img src="../images/tu-van-tuyen-sinh.png" alt="" class="tuyensinh"></a> <br>
+    <video controls>
+        <source src="../videos/intro.mp4">
+        <track src="../videos/phude.vtt" label="Tiếng Việt" default>
+        <track src="../videos/phude_en.vtt" label="English">
+    </video>
+</body>
+<style>
+    table{
+        border: 1px solid black ; 
+        border-collapse: collapse;
+        text-align: left;
+        margin: left;
+        width: 80%;
+
+    }
+    .logo{
+        padding-bottom: 5px;
+    }
+    .tuyensinh{
+        padding-left:  30% ; 
+        width: auto;
+        height: auto;
+    }
+    a{
+        text-decoration: none;
+        color: black;
+    }
+    h3{
+        font-family:  sans-serif;
+        color:#B22222 ; 
+    }
+    h2{
+        text-align: center;
+        color: #B22222;
+    }
+    .dhkh{
+        height: 100%;
+        width: 90%;
+    }
+    html{
+        border: solid #028ECF 2px;
+    }
+    video{
+        padding-left: 25%;
+    }
+</style>
+</html>

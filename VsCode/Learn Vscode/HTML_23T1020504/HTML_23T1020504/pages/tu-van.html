@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tu-van</title>
+    <link rel="stylesheet" >
+</head>
+<body>
+    <div id="tieude">
+        <h2> HỎI ĐÁP TƯ VẤN TUYỂN SINH</h2>
+        <hr>
+    </div>
+    <div id="noidung"></div>
+    <div>
+        
+        <div>
+            <fieldset>
+                 <legend>Liên hệ hỏi đáp tuyển sinh</legend>
+                 <table id="main">
+                    <th>
+                        <tr>
+                            <td> Họ và tên: </td> <td> <input type="text"></td>
+                        </tr>
+                        <tr>
+                            <td> Giới tính: </td> <td> <input type="radio" name="gioitinh"> Nam <input type="radio" name="gioitinh"> Nữ</td>
+                        </tr>
+                        <tr>
+                            <td>Email:</td> <td><input type="email" name="Email"></td>
+                        </tr>
+                            <tr>
+                                <td> Di động:</td> <td> <input type="number" name="sdt"><br></td>
+                            </tr>
+                            <tr>
+                                <td>Ngành học bạn quan tâm:</td> <td><select>
+                                        <option> Công nghệ thông tin </option>
+                                        <option>Kiến trúc </option>
+                                        <option>Báo chí</option>
+                                    </select> </td>
+                            </tr>
+                            <tr>
+                                <td>Câu hỏi của bạn là gì?</td> <td><textarea cols="30" rows="3"></textarea> <br></td>
+                            </tr>
+                            <tr>
+                                <td></td><td class="check"><input type="checkbox">Tôi xác nhận thông tin trên là đúng</td>
+                            </tr>
+                            <tr>
+                                <td></td><td class="but"><button>Gửi câu hỏi </button>
+                                <button>Xóa form</button></td>
+                            </tr>
+                    </th>
+                   </table>
+            </fieldset>
+           
+       
+        </div>
+    </div>
+</body>
+<style>
+    html{
+        border: #028ECF solid 2px;
+    }
+    #main{
+        border: 1px none gray; 
+    }
+    #tieude{
+       color:  #028ECF
+    }
+    hr{
+        color: gray ;
+         border: solid 1px ; 
+    }
+</style>
+</html>
