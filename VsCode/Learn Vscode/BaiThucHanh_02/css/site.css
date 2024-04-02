@@ -1,0 +1,198 @@
+* {
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+    }
+    .header{
+        height: 706px;
+        background: url('../images/head-background.jpg') ;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+    }
+    .logo, .hotline{
+        height: 200px;
+    }
+    .logo{
+        background: url('../images/logo.png') no-repeat;
+    }
+    .hotline > p {
+        font-style: verdana;
+        font-size: 2rem;
+        font-weight: bold;
+        text-align: center;
+        color: white;
+        margin-top: 80px;
+        padding: 10px;
+        background-color: #49A333;
+        border-radius: 7px;
+    }
+    .register-form{
+        width: 360px;
+        height: 450px;
+        margin-top: 50px;
+        padding: 20px;
+        border: 10px #ced086 solid ;
+        background-color: #678B37;
+        color: white;
+    }
+    .register-form h1{
+        font-size: 2.3rem;
+        text-align: center;
+        margin: 10px, 0 20px 0 ;
+        font-style: italic;
+    }
+    .register-form input{
+        width: 100%;
+        display: block;
+        border: none;
+        border-bottom: 1px solid rgba(204, 204, 0.5);
+        border-top: 1px solid rgba(255, 255, 255, 0.5);
+        margin: 5px;
+        padding: 5px;
+        color: white;
+        background-color: transparent ;
+    }
+    .register-form input::placeholder{
+        color: white;
+    }
+    .register-form button{
+        display: block;
+        background-color: #c5d301;
+        padding: 15px 20px 15px 20px ; 
+        border: none;
+        font-size: 1.1rem;
+        color: white;
+
+    }
+    .section-1{
+        margin-top: 20px;
+
+    }
+    .section-1 h1{
+        color: #2d8c3e;
+        font-weight: bold;
+        text-align: center;
+        font-size: 1.2rem;
+        margin: 10px 0 20px 0; 
+    }
+    .section-1 p{
+        font-size: 1.2rem;
+        text-align: justify ;
+
+    }
+    .section-1 img{
+        width: 95%;
+        height: 95%;
+        border: dashed 2px #2d8c3e;
+        border-radius: 20px;
+    }
+    .section-2{
+        background-color: #81af53;
+        margin-top: 20px ;
+        color: white;
+    }
+    .section-2 h1{
+        font-size: 1.4rem;
+        font-weight: bold ;
+        margin: 20px 0 20px 0 ;
+        border-bottom: 1px solid white;
+    }
+    .section-2 p{
+        text-align: justify;
+    }
+    .section-2 img{
+        width: 80%;
+        height: 80%;
+        margin: 20px 0 20px 0 ;
+    }
+    .section-3{
+        background-color: #dce085;
+        padding-bottom: 40px;
+    }
+    .section-3 h1{
+        font-size: 1.7rem;
+        color: #196530;
+        font-weight: bold;
+        text-align: justify;
+        margin: 20px 0 20px 0 ; 
+    }
+    .section-3 input{
+        width: 100%;
+        margin: 5px 0 5px 0 ;
+        font-size: 0.9rem;
+        padding: 5px ; 
+        border: none ;
+    }
+    .section-3 button{
+        width: 100% ;
+        background-color: #2a6e01;
+        padding: 5px ; 
+        color: white;
+    }
+    html {
+    font:14px Arial;
+    color:#000;
+    }
+    .clearfix {
+    clear: both;
+    }
+    .full-container, .container {
+    margin:0 auto;
+    overflow: auto;
+    }
+    .full-container {
+    width:100%;
+    }
+    .container {
+    width:940px;
+    }
+    .row {
+    width:100%;
+    overflow: auto;
+    }
+    .col-1, .col-2, .col-3, .col-4, .col-5, .col-6 {
+    float:left;
+    position: relative;
+    min-height: 1px;
+    }
+    .col-1 {
+    width: 16.66666667%;
+    }
+    .col-2 {
+    width:33.33333%;
+    }
+    .col-3 {
+    width:50%;
+    }
+    .col-4 {
+    width: 66.66667%;
+    }
+    .col-5 {
+    width:83.33333%;
+    }
+    .col-6 {
+    width:100%;
+    
+    }
+    .text-center {
+    text-align: center;
+    }
+    .text-bold {
+    font-weight: bold;
+    }
+    .float-left {
+    float:left;
+    }
+    .float-right {
+    float:right;
+    }
+    .float-left::after, .float-right::after {
+    clear: both;
+    }
+    .padding-left {
+    padding-left:10px;
+    }
+    .padding-right {
+    padding-right:10px;
+    }
