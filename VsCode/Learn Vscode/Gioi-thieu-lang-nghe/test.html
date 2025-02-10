@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Star Rating and Comment System</title>
+    <style>
+      .star-rating {
+        display: inline-flex;
+        flex-direction: row-reverse;
+      }
+      .star-rating input {
+        display: none;
+      }
+      .star-rating label {
+        font-size: 2em;
+        color: #ddd;
+        cursor: pointer;
+      }
+      .star-rating input:checked ~ label,
+      .star-rating label:hover,
+      .star-rating label:hover ~ label {
+        color: gold;
+      }
+      .comment,
+      .reply,
+      .reply-form {
+        margin-top: 10px;
+        border: 1px solid #ddd;
+        padding: 10px;
+        border-radius: 5px;
+      }
+      .reply-form {
+        margin-left: 20px;
+      }
+      .replies {
+        margin-left: 20px;
+        border-left: 2px solid #ddd;
+        padding-left: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="comment-form">
+      <input type="text" id="commentName" placeholder="Your name" />
+      <textarea id="commentText" placeholder="Leave a comment..."></textarea>
+      <div class="star-rating">
+        <input type="radio" id="5-stars" name="rating" value="5" /><label
+          for="5-stars"
+          >&#9733;</label
+        >
+        <input type="radio" id="4-stars" name="rating" value="4" /><label
+          for="4-stars"
+          >&#9733;</label
+        >
+        <input type="radio" id="3-stars" name="rating" value="3" /><label
+          for="3-stars"
+          >&#9733;</label
+        >
+        <input type="radio" id="2-stars" name="rating" value="2" /><label
+          for="2-stars"
+          >&#9733;</label
+        >
+        <input type="radio" id="1-stars" name="rating" value="1" /><label
+          for="1-stars"
+          >&#9733;</label
+        >
+      </div>
+      <button onclick="submitComment()">Submit</button>
+    </div>
+    <div id="comments">
+      <h3>Comments:</h3>
+    </div>
+    <script>
+      function submitComment() {
+        const commentName = document.getElementById("commentName").value;
+        const commentText = document.getElementById("commentText").value;
+        const rating = document.querySelector(
+          'input[name="rating"]:checked'
+        ).value;
+
+        if (commentName && commentText && rating) {
+          const commentSection = document.getElementById("comments");
+          const newComment = document.createElement("div");
+          newComment.className = "comment";
+          newComment.innerHTML = `
+                    <p>Name: ${commentName}</p>
+                    <p>Rating: ${rating} stars</p>
+                    <p>${commentText}</p>
+                    <div class="reply-form">
+                        <input type="text" class="replyName" placeholder="Your name">
+                        <textarea class="replyText" placeholder="Reply..."></textarea>
+                        <button onclick="submitReply(this)">Reply</button>
+                    </div>
+                    <div class="replies"></div>
+                `;
+          commentSection.appendChild(newComment);
+          document.getElementById("commentName").value = "";
+          document.getElementById("commentText").value = "";
+          document.querySelector(
+            'input[name="rating"]:checked'
+          ).checked = false;
+        } else {
+          alert("Please provide a name, comment, and rating.");
+        }
+      }
+
+      function submitReply(button) {
+        const replyForm = button.parentElement;
+        const replyName = replyForm.querySelector(".replyName").value;
+        const replyText = replyForm.querySelector(".replyText").value;
+
+        if (replyName && replyText) {
+          const repliesSection = replyForm.nextElementSibling;
+          const newReply = document.createElement("div");
+          newReply.className = "reply";
+          newReply.innerHTML = `<p>Name: ${replyName}</p><p>${replyText}</p>`;
+          repliesSection.appendChild(newReply);
+          replyForm.querySelector(".replyName").value = "";
+          replyForm.querySelector(".replyText").value = "";
+        } else {
+          alert("Please provide a name and reply.");
+        }
+      }
+    </script>
+  </body>
+</html>

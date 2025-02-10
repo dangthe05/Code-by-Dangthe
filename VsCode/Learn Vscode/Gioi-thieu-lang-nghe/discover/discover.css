@@ -1,0 +1,85 @@
+html {
+  width: 100vw;
+  height: 100vh;
+  font-size: 10px;
+  background-color: white;
+}
+a {
+  text-decoration: none;
+  display: inline-block;
+  font-size: 18px;
+  color: black;
+}
+a:hover {
+  color: red;
+}
+.header {
+  height: 10vh;
+  width: 95vw;
+  background-color: rgba(255, 255, 255, 0.2);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 10px 20px;
+}
+
+.left-header {
+  margin-left: 0px;
+  text-align: left;
+  display: flex;
+  flex-grow: 1;
+}
+.right-header {
+  display: flex;
+  gap: 20px;
+}
+
+h1 {
+  text-align: center;
+  margin: 30px 0 10px 0;
+  font-size: 30px;
+}
+.row-1 {
+  display: grid;
+  text-align: center;
+  grid-template-columns: 25vw 25vw 25vw;
+  margin-top: 5vh;
+  margin-left: 10vw;
+  grid-gap: 1vw;
+}
+.row-1 div {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.3);
+  background-color: rgba(158, 157, 157, 0.238);
+  border-radius: 5px;
+  font-size: 20px;
+}
+.row-1 img {
+  width: 20vw;
+  height: 30vh;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+.row-2 {
+  display: grid;
+  text-align: center;
+  grid-template-columns: 25vw 25vw 25vw;
+  margin-top: 5vh;
+  margin-left: 10vw;
+  grid-gap: 1vw;
+}
+.row-2 div {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.3);
+  background-color: rgba(158, 157, 157, 0.238);
+  border-radius: 5px;
+  font-size: 20px;
+}
+.row-2 img {
+  width: 20vw;
+  height: 30vh;
+  margin-top: 10px;
+  border-radius: 5px;
+}
